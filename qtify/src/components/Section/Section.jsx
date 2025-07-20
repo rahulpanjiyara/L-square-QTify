@@ -26,7 +26,7 @@ function Section({ title, fetchUrl, renderCard }) {
       <div className={styles.header}>
         <h2>{title}</h2>
         <Button onClick={() => setCollapsed(!collapsed)}>
-          {collapsed ? "Show All" : "Collapse"}
+          {collapsed ? "Show all" : "Collapse"}
         </Button>
       </div>
      {collapsed ? (
