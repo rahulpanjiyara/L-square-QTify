@@ -29,7 +29,7 @@ const SongsTab = ({ genres, songs }) => {
           },
           "& .MuiTabs-indicator": {
             backgroundColor: "transparent", // hide default indicator
-            color: "transparent", // use custom color
+            color: "white", // use custom color
           },
         }}
       >
