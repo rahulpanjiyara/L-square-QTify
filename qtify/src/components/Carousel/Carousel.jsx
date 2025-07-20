@@ -37,7 +37,7 @@ function Carousel({ data, renderItem }) {
           320: { slidesPerView: 2 },
           600: { slidesPerView: 3 },
           960: { slidesPerView: 5 },
-          1280: { slidesPerView: 7 },
+          1280: { slidesPerView: 8 },
         }}
       >
         {data.map((item, index) => (

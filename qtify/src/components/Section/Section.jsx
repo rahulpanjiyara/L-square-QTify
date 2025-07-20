@@ -22,7 +22,7 @@ function Section({ title, fetchUrl, renderCard }) {
   }, [fetchUrl]);
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} >
       <div className={styles.header}>
         <h2>{title}</h2>
         <Button onClick={() => setCollapsed(!collapsed)}>

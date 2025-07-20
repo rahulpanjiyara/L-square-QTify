@@ -1,8 +1,9 @@
 .section {
   
-  padding: 0 20px;
+  
   background-color: var(--color-black);
   color: #ffffff;
+  padding: 10px 20px;
 }
 
 .header {

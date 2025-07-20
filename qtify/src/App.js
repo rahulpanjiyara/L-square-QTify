@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Section from './components/Section/Section';
 import AlbumCard from './components/AlbumCard/AlbumCard';
+import SongSection from './components/Section/SongSection';
 
 function App() {
   const topAlbumUrl = "https://qtify-backend-labs.crio.do/albums/top";
@@ -26,6 +27,7 @@ function App() {
         renderCard={(album) => <AlbumCard key={album.id} album={album} />}
       />
       <div className="hr"></div>
+      <SongSection/>
     </div>
   );
 }
