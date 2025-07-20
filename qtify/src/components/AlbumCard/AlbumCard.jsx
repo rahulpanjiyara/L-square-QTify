@@ -7,7 +7,7 @@ import {
   Chip,
   Box,
 } from "@mui/material";
-import styles from "./AlbumCard.module.css";
+//import styles from "./AlbumCard.module.css";
 
 function AlbumCard({ album }) {
   return (
@@ -21,14 +21,12 @@ function AlbumCard({ album }) {
           image={album.image}
           alt={album.title}
         />
-        <CardContent>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Chip
-              label={`${album.follows ?? 0} Follows`}
-              variant="outlined"
-              className={styles.chip}
-            />
-          </Box>
+        <CardContent sx={{ display: "flex", justifyContent: "center" }}>
+          <Chip
+            label={`${album.follows ?? 0} Follows`}
+            variant="outlined"
+            sx={{backgroundColor: "var(--color-black)", color: "white"}}
+          />
         </CardContent>
       </Card>
       <Typography

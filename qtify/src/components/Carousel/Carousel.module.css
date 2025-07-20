@@ -1,0 +1,25 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+}
+
+.navWrapper {
+  position: static;
+  
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.left {
+  left: -20px;
+}
+
+.right {
+  right: -20px;
+}

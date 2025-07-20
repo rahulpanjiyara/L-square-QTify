@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./Section.module.css";
 import Button from "../Button/Button";
+import Carousel from "../Carousel/Carousel";
 
 function Section({ title, fetchUrl, renderCard }) {
   const [data, setData] = useState([]);
@@ -25,14 +26,16 @@ function Section({ title, fetchUrl, renderCard }) {
       <div className={styles.header}>
         <h2>{title}</h2>
         <Button onClick={() => setCollapsed(!collapsed)}>
-          {collapsed ? "Expand" : "Collapse"}
+          {collapsed ? "Show All" : "Collapse"}
         </Button>
       </div>
-      {!collapsed && (
-        <div className={styles.grid}>
-          {data.map((item) => renderCard(item))}
-        </div>
-      )}
+     {collapsed ? (
+  <Carousel data={data} renderItem={renderCard} />
+) : (
+  <div className={styles.grid}>
+    {data.map((item) => renderCard(item))}
+  </div>
+)}
       
     </div>
   );
