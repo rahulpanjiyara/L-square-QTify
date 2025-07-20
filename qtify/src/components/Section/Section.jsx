@@ -6,7 +6,7 @@ import Carousel from "../Carousel/Carousel";
 
 function Section({ title, fetchUrl, renderCard }) {
   const [data, setData] = useState([]);
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,21 +22,20 @@ function Section({ title, fetchUrl, renderCard }) {
   }, [fetchUrl]);
 
   return (
-    <div className={styles.section} >
+    <div className={styles.section}>
       <div className={styles.header}>
         <h2>{title}</h2>
         <Button onClick={() => setCollapsed(!collapsed)}>
           {collapsed ? "Show all" : "Collapse"}
         </Button>
       </div>
-     {collapsed ? (
-  <Carousel data={data} renderItem={renderCard} />
-) : (
-  <div className={styles.grid}>
-    {data.map((item) => renderCard(item))}
-  </div>
-)}
-      
+      {collapsed ? (
+        <Carousel data={data} renderItem={renderCard} />
+      ) : (
+        <div className={styles.grid}>
+          {data.map((item) => renderCard(item))}
+        </div>
+      )}
     </div>
   );
 }
