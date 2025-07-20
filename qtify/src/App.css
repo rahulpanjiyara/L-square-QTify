@@ -13,3 +13,11 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+.hr{
+    border: none;
+    height: 2px;
+    width: 100%;
+   
+    background-color:var(--color-primary);
+    
+}
