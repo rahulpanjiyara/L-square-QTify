@@ -34,7 +34,7 @@ function Carousel({ data, renderItem }) {
         }}
         spaceBetween={20}
         breakpoints={{
-          320: { slidesPerView: 1 },
+          320: { slidesPerView: 2 },
           600: { slidesPerView: 3 },
           960: { slidesPerView: 5 },
           1280: { slidesPerView: 7 },
