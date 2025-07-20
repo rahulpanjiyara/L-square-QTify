@@ -5,7 +5,8 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border: 1px solid var(--color-black);
-  width: 502px;
+  width:30vw
+  
 }
 
 .wrapper {
@@ -37,4 +38,13 @@
 
 .albumArtists {
   font-size: 12px;
+}
+/* Mobile-specific style */
+@media (max-width: 768px) {
+ 
+  .search  {
+    width: 60vw;
+    font-size: 0.9rem; /* reduce font size */
+    padding: 8px 10px;  /* optional: reduce padding */
+  }
 }

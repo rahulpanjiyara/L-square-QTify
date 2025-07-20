@@ -8,3 +8,38 @@
   text-align: center;
   gap: 30px;
 }
+
+/* .hero div {
+  flex: 1;
+  min-width: 280px;
+} */
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* Image responsiveness */
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1rem;
+  }
+
+  .hero img {
+    margin-top: 20px;
+    width: 100px;
+  }
+}
